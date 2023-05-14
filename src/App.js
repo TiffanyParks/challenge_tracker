@@ -1,3 +1,4 @@
+import Challenge from "./components/Challenge";
 
 function App() {
   return (
@@ -42,54 +43,10 @@ function App() {
         role="list"
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading">
-        <li className="todo stack-small">
-          <div className="c-cb">
-            <input id="todo-0" type="checkbox" defaultChecked={true} />
-            <label className="todo-label" htmlFor="todo-0">
-            HTML, CSS, and Git: Code Refactor
-            </label>
-          </div>
-          <div className="btn-group">
-            <button type="button" className="btn">
-              Edit <span className="visually-hidden">HTML, CSS, and Git: Code Refactor</span>
-            </button>
-            <button type="button" className="btn btn__danger">
-              Delete <span className="visually-hidden">HTML, CSS, and Git: Code Refactor</span>
-            </button>
-          </div>
-        </li>
-        <li className="todo stack-small">
-          <div className="c-cb">
-            <input id="todo-1" type="checkbox" />
-            <label className="todo-label" htmlFor="todo-1">
-            Advance CSS: Portfolio
-            </label>
-          </div>
-          <div className="btn-group">
-            <button type="button" className="btn">
-              Edit <span className="visually-hidden">Advance CSS: Portfolio</span>
-            </button>
-            <button type="button" className="btn btn__danger">
-              Delete <span className="visually-hidden">Advance CSS: Portfolio</span>
-            </button>
-          </div>
-        </li>
-        <li className="todo stack-small">
-          <div className="c-cb">
-            <input id="todo-2" type="checkbox" />
-            <label className="todo-label" htmlFor="todo-2">
-            JavaScript: Password Generator
-            </label>
-          </div>
-          <div className="btn-group">
-            <button type="button" className="btn">
-              Edit <span className="visually-hidden">JavaScript: Password Generator</span>
-            </button>
-            <button type="button" className="btn btn__danger">
-              Delete <span className="visually-hidden">JavaScript: Password Generator</span>
-            </button>
-          </div>
-        </li>
+        <Challenge name='HTML, CSS, and Git: Code Refactor' />
+        <Challenge name='Advanced CSS: Portfolio' />
+        <Challenge name='JavaScript: Password Generator' />
+        
       </ul>
     </div>
   );
