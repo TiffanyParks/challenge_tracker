@@ -43,9 +43,9 @@ function App() {
         role="list"
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading">
-        <Challenge name='HTML, CSS, and Git: Code Refactor' />
-        <Challenge name='Advanced CSS: Portfolio' />
-        <Challenge name='JavaScript: Password Generator' />
+        <Challenge name='HTML, CSS, and Git: Code Refactor' completed={true} id='challenge-0'/>
+        <Challenge name='Advanced CSS: Portfolio' completed={false} id='challenge-1'/>
+        <Challenge name='JavaScript: Password Generator' completed={false} id='challenge-2' />
         
       </ul>
     </div>
